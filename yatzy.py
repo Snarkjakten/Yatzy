@@ -5,8 +5,9 @@ s = 0
 tur = 1
 while True:
 
+    """ kollar om vi har spelare, satter upp antal spelare och deras scoreboard """
     if s < 1:
-        """ skapar matris som ska bli scoreboard for s antal spelare"""
+        """ skapar matris som ska bli scoreboard for s antal spelare """
         print("Nytt spel")
         s = int(input("Hur manga spelare spelar?"))
         numpy.set_printoptions(threshold=numpy.nan)
@@ -60,13 +61,15 @@ while True:
         scoreboard[spara, tur] = count*spara
 
         print(scoreboard)
-        return scoreboard
+
+    """ alla far kora 6 ggr """
     y = 0
     for y in range(6):
         tur = 1
         x = 0
+        """ spelarna kor i turordning per gång """
         for x in range(s):
-            scoreboard = kast(tur)
+            kast(tur)
             tur += 1
             print("Nasta spelares tur")
     s = 0
