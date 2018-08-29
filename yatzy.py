@@ -13,8 +13,14 @@ while True:
     for x in range(7):
         scoreboard[x, 0] = x
         x += 1
+        
+    """" fixar spelarkolumnen i scoreboard """
+    x = 1
+    for x in range(s+1):
+        scoreboard[0, x] = x
+        x += 1
     print(scoreboard)
-
+    
     """ kastar n tarningar som sparas i en lista """
     dielist = []
     x = 0
