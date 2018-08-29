@@ -4,6 +4,7 @@ import numpy
 while True:
 
     """ skapar matris som ska bli scoreboard for s antal spelare"""
+    """ Jag gillar glass"""
     s = int(input("Hur manga spelare spelar?"))
     numpy.set_printoptions(threshold=numpy.nan)
     scoreboard = numpy.zeros((7, s+1))
