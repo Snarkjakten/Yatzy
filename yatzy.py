@@ -14,7 +14,7 @@ while True:
         scoreboard = numpy.zeros((7, s+1))
 
         """ fixar poangkategorier i scoreboard """
-        x = 7
+        x = 1
         for x in range(7):
             scoreboard[x, 0] = x
             x += 1
