@@ -74,3 +74,4 @@ while True:
             print("Nasta spelares tur")
     s = 0
     print("spelet r slut")
+"""nu borjar spelet om pa if-satsen"""
